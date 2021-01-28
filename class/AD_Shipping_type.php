@@ -1,6 +1,5 @@
 <?php
 
-
 class AD_Shipping_type extends WC_Shipping_Method
 {
 
