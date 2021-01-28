@@ -25,5 +25,5 @@
 		?>
 		</header><!-- .entry-header -->
 		<?php
-	}   //ce add_action permet 
+	}   
         add_action('storefront_loop_before','storefront_post_header');
