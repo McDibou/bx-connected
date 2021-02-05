@@ -26,4 +26,11 @@
 		</header><!-- .entry-header -->
 		<?php
 	}   
-        add_action('storefront_loop_before','storefront_post_header');
+		add_action('storefront_loop_before','storefront_post_header');
+
+		$ad_article = new WP_Query([
+			'post_type' => 'product',
+			'orderby' => 'rand',
+			'posts_per_page' => 3,
+			'meta_key' => '_sale_price',
+		]);
