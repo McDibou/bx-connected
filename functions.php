@@ -20,7 +20,9 @@
 			the_title( sprintf( '<h2 class="alpha entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 			}		
 		}
-
+		if (is_front_page()){
+			the_title('<h1>Bonjour</h1>');
+		}
 		do_action( 'storefront_post_header_after' );
 		?>
 		</header><!-- .entry-header -->
@@ -28,4 +30,13 @@
 	}   
 		add_action('storefront_loop_before','storefront_post_header');
 
-	
+
+
+		
+		//fonction pour ajouter lire la suite sur un article sur la page d'accueil
+		function new_excerpt_more($more) {
+			global $post;
+			return '<a class="moretag" href="'. get_permalink($post->ID) . '"> lire la suite</a>';
+		}
+		add_filter('excerpt_more', 'new_excerpt_more');
+
