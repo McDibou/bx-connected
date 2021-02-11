@@ -44,4 +44,4 @@ add_filter('woocommerce_account_menu_items', function () {
     // modifier lien menu (mon compte) vers la page commande (liens personnaliser)
 });
 
-// Ajouter Methode de payement + images footer `colonne 3`
+// Ajouter Methode de payement + images footer `colonne 3
