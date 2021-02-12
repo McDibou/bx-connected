@@ -2,7 +2,7 @@
 
 > Projet réalisé dans le cadre de la formation web développeur au CF2M
 >
->Le site represente un catalogue de produit domotique construit avec Wordpress et principlament diriger avec le plugin de WooCommerce
+>Le site représente un catalogue contenant des produits domotiques construit avec Wordpress et principalement dirigé avec le plugin de WooCommerce
 
 https://bx-connected.webdev-cf2m.be/
 
